@@ -1,0 +1,147 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Cyclistic Project</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Ali Gruett</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">Projects</a></li>
+							<li><a href="generic.html">About Me</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/ali-gruett-cpa-9b011aa6/" target="_blank" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<h1>Cyclistic Bike-Share Case Study</h1>
+								</header>
+								<div class="image" style="margin-left: 220px"><img src="images/Cyclistic Logo.png" alt="" /></div>
+								<p></br></p>
+								
+								<p><b>In this case study, I have analyzed data obtained from a Chicago based bike-share company to identify common patterns and trends in how their customers use the bikes differently. R, SQL, and Power BI were used.</b><br />
+									<li><a><a href="https://rpubs.com/A_Gruett/Cyclistic_Case_Study" target="_blank">Analysis in R</span></a></li>
+									<li><a><a href="https://github.com/AliGruett/Cyclistic/blob/main/SQLCode.sql" target="_blank">Analysis in SQL</span></a></li>
+									<li><a><a href="https://docs.google.com/presentation/d/e/2PACX-1vR2dvH-PUasC0IbIeHf6tkrLsGt4iyUUldVaHbpq9m_LZ7Rt05uudnDbL-nj16QuzjO9RVkhh88wpXK/pub?start=false&loop=false&delayms=15000" target="_blank">Presentation</span></a></li></p>
+								<h3>Background</h3>
+									<p>In 2016 Cyclistic launched a successful bike-share offering. Since then, the program has grown to a fleet of 5,824 bicyles that are geotracked and locked into a network of 692 stations across Chicago. The bikes can be unlocked from one station and returned to any other station in the system anytime. Pricing plans include single-ride passes, full-day passes, and annual memberships. Customers who purchase single-ride or full-day passes are referred to as casual riders. Customers who purchase annual memberships are Cyclistic members. Cyclistics marketing team has concluded that annual memberships are more profitable than casual riders. The director of marketing believes that maximizing the number of annual members will be key to future growth.</p>
+									<p>The marketing team needs to better understand how annual members and casual riders differ. Once this is determined, marketing strategies will be developed with the aim of converting casual riders into annual members.</p>
+								<h3>Business Task</h3>
+									<p>The marketing director has defined the goal of designing marketing strategies aimed at converting casual riders into annual members. To do this, the below three questions are being asked. The business task for this analysis is to answer the first question.<br />
+										<li><u>1. How do annual members and casual riders use Cyclistic bikes differently?</u></li>
+										<li>2. Why would casual riders buy Cyclistic annual memberships?</li>
+										<li>3. How can Cyclistic use digital media to influence casual riders to become members?</li>
+									</p>
+								<h3>Data Sources and Integrity</h3>
+									<p>Data was obtained from <a href="https://divvy-tripdata.s3.amazonaws.com/index.html" target="_blank" >here</span></a> and was made available by Motivate International Inc. under this <a href="https://ride.divvybikes.com/data-license-agreement" target="_blank">license.</span></a>  The data used for the analysis was collected during the period May 1, 2022 through April 20, 2023.</p>
+									<p>The data was vetted to determine whether it was credible by ensuring it was:
+										<li><u>Reliable</u>: Public dataset from a reputable company. Contains the entire population of rides taken each month.</li>
+										<li><u>Original</u>: Data is collected directly from customers by the company providing the bikesharing service.</li>
+										<li><u>Comprehensive</u>: The data represents the full population of trips. It has attributes such as type of rider and information on the start and ends of the rides (Station ID, Station Name, Date and Time).</li>
+										<li><u>Current</u>: Data is up-to-date with the most recent month of June 2023 being available for download.</li>
+										<li><u>Cited</u>: Data is from a credible organization (Lyft Bikes and Scooters, LLC). </li>
+									</p>
+									<p>
+										The following issues were noted during the cleaning and analysis stages of the project:
+									<li>A significant number of rides did not have start_station_ids/names or end_station_ids/names. </li>
+									<li>There were a small number of duplicate ride IDs. </li>
+									<li>Many start and end stations had multiple latitudes and longitude coordinates.</li></p>
+								<h3>Data Cleaning, Transformation, and Analysis</h3>
+										<p>To demonstrate my ability to use both both SQL and R for data cleaning, transformation, and analysis, see the following links:
+											<li><a href="https://rpubs.com/A_Gruett/Cyclistic_Case_Study" target="_blank">R</span></a></li>
+											<li><a href="https://github.com/AliGruett/Cyclistic/blob/main/SQLCode.sql" target="_blank">SQL</span></a></li>
+										</p>
+								<h3>Visualizing the Data</h3>
+										<p> R and Power BI were both used to create visualizations from the data. The link provided to my R analysis in the above section also includes the visualizations I created. Below are screenshots of the Power BI reports created from the data which was cleaned, transformed, and exported from SQL in the previous section.</p>
+										<div class="image main"><img src="images/PowerBIMonth.png" alt="" /></div>
+										<div class="image main"><img src="images/PowerBIDOW.png" alt="" /></div>
+										<div class="image main"><img src="images/PowerBIHour.png" alt="" /></div>
+										<div class="image main"><img src="images/PowerBIPopularRoutes.png" alt="" /></div>
+										<div class="image main"><img src="images/PowerBIStartLoc.png" alt="" /></div>
+										<div class="image main"><img src="images/PowerBIEndLoc.png" alt="" /></div>
+										<div class="image main"><img src="images/PowerBIBikeType.png" alt="" /></div>
+										<div class="image main"><img src="images/PowerBIRoundTrips.png" alt="" /></div>
+										<div class="image main"><img src="images/PowerBIRoundTripsMap.png" alt="" /></div>
+										<div class="image main"><img src="images/PowerBIRoundTripsDOW.png" alt="" /></div>
+								</p>
+								<h3>Recommendations and Next Steps</h3>
+								<p><a><a href="https://docs.google.com/presentation/d/e/2PACX-1vR2dvH-PUasC0IbIeHf6tkrLsGt4iyUUldVaHbpq9m_LZ7Rt05uudnDbL-nj16QuzjO9RVkhh88wpXK/pub?start=false&loop=false&delayms=15000" target="_blank">Link to stakeholder presentation</span></a></p>
+								<p>
+									1. Casual rider use peaks during the summer months and during weekends. <u>Offer different types of memberships</u> catering to these trends, such as weekend and summer passes. Advertising campaigns for these types of memberships should be in the spring. Incentives could be offered for purchasing these memberships ahead of time, such as a discount for signing up one month in advance of the busy season.
+								</p>
+								<p>
+									2. <u>Partner with local businesses</u> close to the most popular stations for casual riders to offer deals with the purchase of a membership, such as discounts at restaurants, museums, and other venues.
+								</p>
+								<p>
+								3. <u>Develop an app</u> for all users which tracks their trips. Notifications containing promotional materials could be sent to frequent riders via the app.</p>
+								</p>
+								<p>For further analysis, determine whether all riders could be assigned a unique ID and their email addresses collected. This would allow Cyclistic to track user's trip patterns. Frequent users could be targeted for ads and promotions to persuade them to become memebrs. Surveys could also be conducted of casual riders and members. Information should be collected regarding the bike rides they are taking, including:
+									<li>Purpose of using Cyclistic bikes</li>
+									<li>City and state they reside in</li>
+									<li>Frequency of use</li>
+									<li>Interest in cost savings</li>
+									<li>How they heard about Cyclistic bike-share</li>
+								</p>
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+				<footer id="footer">
+					<section class="split contact">
+						<section>
+							<h3>Email</h3>
+							<p>aligruett@gmail.com</p>
+						</section>
+						<section>
+							<h3>LinkedIn</h3>
+							<ul class="icons alt">
+								<li><a href="https://www.linkedin.com/in/ali-gruett-cpa-9b011aa6/" target="_blank" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							</ul>
+						</section>
+					</section>
+				</footer>
+
+			<!-- Copyright -->
+				<div id="copyright">
+					Design: <a href="https://html5up.net">HTML5 UP</a></ul>
+				</div>
+
+		</div>
+
+	<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+</body>
+</html>

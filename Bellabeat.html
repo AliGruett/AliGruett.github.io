@@ -1,0 +1,173 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Bellabeat Project</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Ali Gruett</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">Projects</a></li>
+							<li><a href="generic.html">About Me</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/ali-gruett-cpa-9b011aa6/" target="_blank" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<h1>Bellabeat Case Study</h1>
+								</header>
+								<div class="image small" style="margin-left: 250px"><img src="images/Bellabeat Logo.png" alt="" /></div>
+								<p></br></p>
+								
+								<p><b>In this case study, I have analyzed data obtained from Kaggle to identify common patterns and trends in how customers use their fitness trackers. R was used for the analysis and visualizations.</b><br />
+									<li style="margin-left:30px"><a><a href="https://rpubs.com/A_Gruett/Bellabeat_Case_Study" target="_blank">Analysis in R</span></a></li>
+									<li style="margin-left:30px"><a><a href="https://docs.google.com/presentation/d/e/2PACX-1vQqmAmyNvDGJVNouI8qwVGrLMiisW6CP5KmRYIrDQ3XNk7xOfmuMNsVPNYoSoJ3_ATzUXLKeXc5Kv_t/pub?start=false&loop=false&delayms=15000" target="_blank">Presentation</span></a></li></p>
+								<h3>Background</h3>
+									<p>Bellabeat, founded in 2013, is a high-tech company that manufactures health-focused smart products and has positioned itself as a tech-driven wellness company for women. Collecting data on activity, sleep, stress, and reproductive health has allowed Bellabeat to empower women with knowledge about their own health and habits.</p>
+									<p>Bellabeat is a successful small company, but they have the potential to become a larger player in the global smart device market. The cofounder and Chief Creative Officer believes that analyzing smart device fitness data could help unlock new growth opportunities for the company.</p>
+								<h3>Business Task</h3>
+									<p>Analyze smart device data to gain insight into how consumers are using non-Bellabeat products. To do this the below three questions are asked:<br />
+										<li style="margin-left:30px">1. What are some trends in smart device usage?</li>
+										<li style="margin-left:30px">2. How could these trends apply to Bellabeat customers?</li>
+										<li style="margin-left:30px">3. How could these trends help influence Bellabeat marketing strategy?</li>
+									</p>
+									<p>The data is personal fitness tracker information from 33 Fitbit users over the period April 12, 2016 - May 12, 2016. Information tracked includes minute-level output for physcial activity, sleep monitoring, step counts. Other information such as weight logs is also included.</p>
+								<h3>Data Sources and Integrity</h3>
+									<p>Data was obtained from <a href="https://www.kaggle.com/datasets/arashnic/fitbit" target="_blank" >here</span></a> (CC0: Public Domain, dataset made available through Mobius). The data used for the analysis was collected during the period April 12, 2016 through May 12, 2016.</p>
+									<p>The data was vetted to determine whether it was credible by measuring it against the below criteria:
+										<li style="margin-left:30px"><u>Reliability</u>: Public dataset that was generated from respondents to a survey via Amazon Mechanical Turk.</li>
+										<li style="margin-left:30px"><u>Originality</u>: Data was collected from customers by a third party company. A Kaggle user made it available.</li>
+										<li style="margin-left:30px"><u>Comprehensiveness</u>: The data is not comprehensive. It is a small sample of Fitbit customers (33 users). Data collected includes information on users' physical activity, sleep monitoring, number of steps, calories burned, and steps taken among other things.</li>
+										<li style="margin-left:30px"><u>Relevant (Current)</u>: Data is not current. It is for one month during 2016.</li>
+										<li style="margin-left:30px"><u>Cited</u>: Data is from a third party company and not Fitbit. </li>
+										<p></p>The data has some weaknesses but is relevant to the business task presented above. These weaknesses will be kept in mind when drawing conclusions from the analysis.</p>
+									</p>
+									<p>The following issues and concerns were noted during the cleaning and analysis stages of the project:
+										<li style="margin-left:30px">We don't know any information about the survey respondents, such as their genders, ages, occupations, etc. Gender especially would have been improtant to know given Bellabeat is marketed to women.</li>
+										<li style="margin-left:30px">Other information we don't know about the users includes their fitness and health goals, their reasons for using the tracker, and how long prior to the survey they had been using the trackers. This information would have been helpful for assessing how they measured against their goals and whether the Fitbits were helping them stay on track.</li>
+										<li style="margin-left:30px">Some of the users did not wear the fitbits for the full duration of the survey time period.</li>
+										<li style="margin-left:30px">There could be bias with the data given the users knew there results would be shared. This could have affected their behavior.</li></p>
+								<h3>Data Cleaning, Transformation, and Analysis</h3>
+										<p>To demonstrate my ability to use R for data cleaning, transformation, and analysis, see the following link:
+											<li style="margin-left:30px"><a href="https://rpubs.com/A_Gruett/Bellabeat_Case_Study" target="_blank">R code</span></a></li>
+										</p>
+								<h3>Visualizing the Data</h3>
+										<p> R was used to create visualizations from the data. A few of them are shown below.</p>
+										<p style="margin-left: 10px">1. The mean and median values for the number of daily steps taken of all survey respondents. For variables such as "total steps" shown below, which had their mean and median close together, the mean was used for analysis.</p>
+										<div class="image small"><img src="images/Bellabeat_Daily_Total_Steps_of_All_IDs.png" alt="" /></div>
+										<p style="margin-left: 10px">2. The mean and median values of users' physical activity minutes categorized as "very active" by Fitbit. For variables such as "very active minutes" shown below, which had a significant difference between their mean and median values, the median was used for analysis.</p>
+										<div class="image small"><img src="images/Bellabeat_Daily_Minutes_of_Very_Active_Activity_of_All_IDs.png" alt="" /></div>
+										<p style="margin-left: 10px">3. The relationships between the types of physical activity (very active minutes, fairly active minutes, lightly active minutes, and sedentary minutes) and number of calories burned was examined. The very active minutes variable, shown below, had the strongest correlation. This was expected since the assumption is more calories are burned with more intense forms of physical activity.</p>
+										<div class="image small"><img src="images/Bellabeat_Relationship_Btw_VeryActiveMinutes_Calories.png" alt="" /></div>
+										<p style="margin-left: 10px">4. Many of the Fitbit users in the sample did not use their Fitbits every day. Twelve of the 33 users did not wear them each day. Of those 12, four used them for less than 10 days and one used their Fitbit for four days.</p>
+										<div class="image small"><img src="images/Bellabeat_DaysUsed.png" alt="" /></div>
+										<p style="margin-left: 10px">5. Twelve users met the CDC recommended guidelines for at least 4 of the 5 weeks. The CDC recommends at least 150 minutes of moderate or 75 minutes of intense physical activity each week.</p>
+										<p style="margin-left: 10px">Please note Week 5 is only made up of three days.</p>
+										<div class="image main"><img src="images/Bellabeat_150Min.png" alt="" /></div>
+										<p style="margin-left: 10px">6. For eleven of the 12 users who met the recommended 150 minutes of moderate physical activity, 75 of the 150 minutes of activity was made up of intense physical activity.</p>
+										<p style="margin-left: 10px">Please note Week 5 is only made up of three days.</p>
+										<div class="image main"><img src="images/Bellabeat_75Min.png" alt="" /></div>
+										<p style="margin-left: 10px">7. The consistency of steps users took each day varied widely for some. Others maintained a more even number of steps.</p>
+										<div class="image main"><img src="images/Bellabeat_DailySteps.png" alt="" /></div>
+										<p style="margin-left: 10px">8. Nine users did not use their Fitbits to track their sleep. Nine users tracked their sleep for less than 10 days. Three users tracked their sleep for 11-20 days and 12 users for 21-31 days.</p>
+										<p style="margin-left: 10px">Please note during the analysis it was found the Fitbits were not accurately recording sleep times.</p>
+										<div class="image small"><img src="images/Bellabeat_DaysSleepTracked.png" alt="" /></div>
+										<p style="margin-left: 10px">9. Many of the Fitbit users in the sample did not consistently get the CDC recommended number of hours of sleep per night for adults (at least 7 hours), defined here as 'good' sleep quality. For some, the number of 'bad' night's sleep outnumbered 'good' sleep nights.</p>
+										<p style="margin-left: 10px">Please note during the analysis it was found the Fitbits were not accurately recording sleep times.</p>
+										<div class="image main"><img src="images/Bellabeat_GoodvBadSleepTracked.png" alt="" /></div>
+										<p style="margin-left: 10px"></p>
+										<div class="image small"><img src="images/Bellabeat_GoodvBadSleepDays.png" alt="" /></div>
+										<p style="margin-left: 10px">10. Two users consistenly tracked their weight, which stayed consistent during the survey time frame. Six users infrequently used their Fitbits to track their weight.</p>
+										<div class="image small"><img src="images/Bellabeat_WeightTracked.png" alt="" /></div>
+								</p>
+								<h3>Analysis Conclusions</h3>
+								<p>
+								<li>The Fitbit devices were not accurately tracking users’ data.</li>
+								<li>Users were not consistent with wearing the device.</li>
+								<li>Users were not consistent with meeting the CDC recommended levels of physical activity.</li>
+								<li>Only a few people used the devices to track their weight. This may have been due to the inconvenience of manually entering in this information or because they did not want to track their weight.</li>
+								<li>Many did not use it to track their sleep. This may have been due to the device being uncomfortable to wear or because they did not want to track their sleep patterns.</li>
+								</p>
+								<h3>Recommendations</h3>
+								<p><a><a href="https://docs.google.com/presentation/d/e/2PACX-1vQqmAmyNvDGJVNouI8qwVGrLMiisW6CP5KmRYIrDQ3XNk7xOfmuMNsVPNYoSoJ3_ATzUXLKeXc5Kv_t/pub?start=false&loop=false&delayms=15000" target="_blank">Link to stakeholder presentation</span></a></p>
+								<p>Marketing campaigns should focus on the following themes:</p>
+								<p>
+									1. <u>Consistency.</u> Bellabeat’s products will keep users consistent to help them achieve their health and fitness goals. To do so, users should consistently wear the device and perform healthy activities. Bellabeat should market the following features of its products:
+										<p style="margin-left: 40px">a. Comfort and style: Bellabeat’s devices can be worn as a necklace, bracelet, or clip depending on the user’s preference. The products are stylish, having been designed with beauty in mind.</p>
+										<p style="margin-left: 40px">b. Ability to motivate: the app provides more than just the user’s data. It gives insights based on the data to help users better understand their habits and make healthy decisions. Users are more likely to consistently wear the device and stay on track with their goals if their information is easy to access, relevant, and understandable. </p>
+								</p>
+								<p>
+									2. <u>Accuracy.</u> Provide information to consumers about how their Bellabeat products provide accurate data. Bellabeat is a high-tech company and consumers expect their products to provide truthful information about their health and wellness. If users are going to invest in a fitness device, they want one they can trust to give them the most accurate information about themselves.
+
+								</p>
+								<h3>Impact</h3>
+								<p>
+								<li>Users of non-Bellabeat devices may make the switch.</li>
+								<li>Consumers in the market for fitness devices may choose Bellabeat products over competitors.</li>
+								</p>
+								<h3>Further Analysis</h3>
+								<p>1. Survey current Bellabeat customers to determine which features they value the most and whether there is anything they would improve, such as the type of data collected or how it is presented to them.</p>
+								<p>2. The analysis was performed over a small sample of people over a short duration of time. Determine whether data could be collected from current Bellabeat customers and from a greater population of other fitness device wearers to gain even greater insight about how customers use Bellabeat’s and other company’s products. Demographic information, such as gender, would be useful to collect as well.</p>
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+				<footer id="footer">
+					<section class="split contact">
+						<section>
+							<h3>Email</h3>
+							<p>aligruett@gmail.com</p>
+						</section>
+						<section>
+							<h3>LinkedIn</h3>
+							<ul class="icons alt">
+								<li><a href="https://www.linkedin.com/in/ali-gruett-cpa-9b011aa6/" target="_blank" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							</ul>
+						</section>
+					</section>
+				</footer>
+
+			<!-- Copyright -->
+				<div id="copyright">
+					Design: <a href="https://html5up.net">HTML5 UP</a></ul>
+				</div>
+
+		</div>
+
+	<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+</body>
+</html>
